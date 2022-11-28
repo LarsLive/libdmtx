@@ -20,7 +20,6 @@ else()
 endif()
 
 set_target_properties(dmtx PROPERTIES PUBLIC_HEADER "${CMAKE_CURRENT_SOURCE_DIR}/dmtx.h")
-install(TARGETS dmtx LIBRARY ARCHIVE RUNTIME PUBLIC_HEADER)
 
 # Add tests if DMTX is the main project
 if(CMAKE_PROJECT_NAME STREQUAL PROJECT_NAME)
