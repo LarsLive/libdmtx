@@ -13,7 +13,7 @@ endif()
 if (MSVC)
   set_target_properties(dmtx PROPERTIES WINDOWS_EXPORT_ALL_SYMBOLS ON)
 else()
-  set(CMAKE_C_FLAGS "-fPIC")
+  set(CMAKE_C_FLAGS "${CMAKE_CXX_FLAGS}")
   set_target_properties(dmtx PROPERTIES
                                 VERSION ${PROJECT_VERSION}
                                 SOVERSION ${PROJECT_VERSION_MAJOR})
